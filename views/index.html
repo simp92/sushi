@@ -1,14 +1,7 @@
 {% extends 'layout.html' %}
 {% block title %}{% endblock %}
-{% block head %}
-	{% parent %}
-	{% for css_ in css %}
-		<link rel="stylesheet" href="../public/stylesheet/{{css_}}.css">
-	{% endfor %}
-	{% for js_ in js%}
-		<script type="text/javascript" src="../public/javascript/{{js_}}.js"></script>
-	{% endfor %}
-{% endblock %}
+
+
 {% block content %}
 <div class="container">
 	<h1>{{ title }}</h1>

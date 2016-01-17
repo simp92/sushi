@@ -5,9 +5,9 @@ var router = express.Router();
 
 
 router.get('/', function(req, res, next) {
-	var js= ['Paul', 'Jim', 'Jane'];
-	var css =['wena', 'wena2', 'wena3'];
-  res.render('index', { title: 'Express',js:js ,css:css });
+	var js= ['bootstrap.min'];
+	var css =['bootstrap.min', 'landing-page','style'];
+  res.render('menu_index', {js:js ,css:css });
 
 });
 
